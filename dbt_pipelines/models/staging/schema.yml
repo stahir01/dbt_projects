@@ -1,0 +1,54 @@
+
+version: 2
+
+models:
+  - name: stg_mobile_events
+    description: "Cleaned mobile events data from the raw seeds"
+    columns:
+      - name: event_name
+        description: "The name of the event"
+        tests:
+          - not_null
+      - name: application_version_code
+        description: "The version code of the application"
+        tests:
+          - not_null
+      - name: arrival_timestamp
+        description: "The timestamp when the event arrived in the backend"
+        tests:
+          - not_null
+      - name: client_id
+        description: "The client id of the event"
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "The client timestamp of the event"
+        tests:
+          - not_null
+
+        
+  - name: stg_web_events
+    description: "Cleaned web events data from the raw seeds"
+    columns:
+      - name: event_name
+        description: "The name of the event"
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "The client timestamp of the event"
+        tests:
+          - not_null
+      - name: user_id
+        description: "The user id of the event"
+        tests:
+          - unique
+          - not_null
+      - name: arrival_timestamp
+        description: "The timestamp when the event arrived in the backend"
+        tests:
+          - not_null
+      - name: session_id
+        description: "The session id of the event"
+        tests:
+          - unique
+          - not_null

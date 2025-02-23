@@ -1,0 +1,91 @@
+event_name,event_timestamp,user_id,fingerprint,arrival_timestamp,browser_name,browser_version,language,screen_resolution,device_type,cookies_enabled,session_id,user_access_type,country_code,referrer,item_id,item_type,item_title
+item-finished,2025-02-04 06:47:00.000,abcd1008uvwx1905,2751abcd-9107wxyz,2025-02-04 06:48:53.000,Chrome,121.9,de-DE,1440x900,desktop,1,4269abcd-3438wxyz,premium,ES,landing-page,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-03 10:13:00.000,abcd1110uvwx1107,1823abcd-2975wxyz,2025-02-03 10:15:00.000,Chrome,111.7,de-DE,1366x768,mobile,1,5234abcd-5179wxyz,free,ES,landing-page,,,
+item-started,2025-02-03 12:53:00.000,abcd1194uvwx7949,1219abcd-1111wxyz,2025-02-03 12:54:45.000,Edge,113.7,en-US,1366x768,laptop,1,1190abcd-5142wxyz,free,IT,search,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 13:11:00.000,abcd1194uvwx7949,1153abcd-7570wxyz,2025-02-03 13:12:46.000,Safari,123.4,en-US,1440x900,mobile,0,2522abcd-7159wxyz,premium,ES,landing-page,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-01-29 10:15:30.123,abcd1234efgh5678ijkl9012,1234abcd-5678-90ef-ghij-klmnopqrstuv,2025-01-29 10:16:45.567,Firefox,122.0,fr-FR,2560x1440,desktop,1,abcd1234-5678-90ef-ghij-klmnopqrstuv,free,FR,landing-page,,,
+login-successful,2025-02-03 15:54:00.000,abcd1614mnop1726,8452abcd-6683wxyz,2025-02-03 15:54:43.000,Chrome,125.6,en-US,1366x768,tablet,0,6198abcd-8448wxyz,free,FR,landing-page,,,
+login-successful,2025-02-02 23:28:00.000,abcd2186mnop7533,3141abcd-9197wxyz,2025-02-02 23:29:19.000,Safari,125.0,de-DE,1920x1080,mobile,0,9187abcd-1024wxyz,premium,GB,landing-page,,,
+login-successful,2025-02-04 14:44:00.000,abcd3168mnop5047,7857abcd-4269wxyz,2025-02-04 14:44:20.000,Firefox,114.4,en-US,2560x1440,tablet,0,9858abcd-4273wxyz,free,ES,library,,,
+item-started,2025-02-04 14:29:00.000,abcd3490mnop1674,5690abcd-3344wxyz,2025-02-04 14:30:12.000,Safari,100.8,fr-FR,1440x900,laptop,0,9503abcd-3730wxyz,premium,GB,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-02 08:25:00.000,abcd3884mnop3271,6097abcd-7372wxyz,2025-02-02 08:25:45.000,Edge,120.5,de-DE,2560x1440,mobile,0,9508abcd-1042wxyz,free,ES,landing-page,14783,book,Atomic Habits
+item-started,2025-02-02 08:33:00.000,abcd4119qrst2585,4791abcd-7277wxyz,2025-02-02 08:34:11.000,Edge,109.7,en-US,1920x1080,mobile,1,2884abcd-7096wxyz,free,ES,landing-page,14783,book,Atomic Habits
+login-successful,2025-02-02 08:28:00.000,abcd4119qrst2585,9345abcd-6134wxyz,2025-02-02 08:29:55.000,Firefox,102.1,de-DE,1440x900,mobile,1,7030abcd-6710wxyz,free,IT,library,,,
+item-finished,2025-02-03 06:05:00.000,abcd4142mnop4938,6902abcd-3687wxyz,2025-02-03 06:05:40.000,Edge,119.8,de-DE,1366x768,tablet,0,8646abcd-2488wxyz,free,DE,search,14783,book,Atomic Habits
+login-successful,2025-02-03 05:31:00.000,abcd4142mnop4938,2744abcd-1444wxyz,2025-02-03 05:31:33.000,Chrome,124.7,de-DE,1366x768,desktop,1,5322abcd-8000wxyz,premium,GB,search,,,
+login-successful,2025-02-03 20:22:00.000,abcd4163efgh6410,3107abcd-5300wxyz,2025-02-03 20:22:21.000,Safari,114.7,en-US,1440x900,desktop,1,4953abcd-8427wxyz,premium,ES,landing-page,,,
+item-finished,2025-02-03 15:01:00.000,abcd4358efgh2037,7373abcd-8238wxyz,2025-02-03 15:02:07.000,Edge,117.5,en-US,1920x1080,tablet,0,5091abcd-1762wxyz,premium,GB,landing-page,14783,book,Atomic Habits
+login-successful,2025-02-04 12:21:00.000,abcd6674efgh4968,3483abcd-3795wxyz,2025-02-04 12:21:01.000,Firefox,123.2,de-DE,2560x1440,desktop,1,6878abcd-4849wxyz,free,DE,library,,,
+item-started,2025-02-03 12:00:00.000,abcd7231efgh1010,8071abcd-3117wxyz,2025-02-03 12:00:03.000,Firefox,108.2,de-DE,2560x1440,mobile,0,7336abcd-6093wxyz,free,IT,landing-page,14783,book,Atomic Habits
+login-successful,2025-02-03 11:12:00.000,abcd7231efgh1010,5052abcd-4213wxyz,2025-02-03 11:12:34.000,Chrome,104.7,fr-FR,1440x900,tablet,0,4105abcd-2394wxyz,free,DE,search,,,
+item-started,2025-02-03 12:00:00.000,abcd8303mnop8795,9048abcd-1005wxyz,2025-02-03 12:01:05.000,Chrome,125.4,fr-FR,2560x1440,mobile,0,5576abcd-7535wxyz,premium,US,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 12:24:00.000,abcd8303mnop8795,2965abcd-2752wxyz,2025-02-03 12:25:49.000,Firefox,126.4,fr-FR,1440x900,laptop,1,4063abcd-3262wxyz,free,GB,landing-page,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-03 13:07:00.000,abcd8303mnop8795,8587abcd-8849wxyz,2025-02-03 13:07:30.000,Chrome,101.3,de-DE,2560x1440,tablet,1,2970abcd-5242wxyz,premium,IT,landing-page,1099,article,New York Times
+item-started,2025-02-02 08:34:00.000,abcd8759uvwx4422,8968abcd-2239wxyz,2025-02-02 08:35:56.000,Firefox,100.7,fr-FR,2560x1440,desktop,0,3166abcd-4673wxyz,premium,US,search,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-02 09:42:00.000,abcd8759uvwx4422,1994abcd-5658wxyz,2025-02-02 09:42:26.000,Edge,110.1,en-US,2560x1440,mobile,1,7497abcd-3630wxyz,premium,FR,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-01 10:04:00.000,abcd8782qrst1957,8448abcd-7278wxyz,2025-02-01 10:04:21.000,Firefox,102.8,de-DE,1366x768,mobile,1,4505abcd-4423wxyz,premium,IT,landing-page,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-01 09:57:00.000,abcd8782qrst1957,7353abcd-6192wxyz,2025-02-01 09:58:47.000,Edge,128.2,es-ES,1440x900,tablet,1,4933abcd-2345wxyz,free,IT,landing-page,,,
+item-finished,2025-02-03 15:03:00.000,abcd9178mnop6759,5625abcd-4761wxyz,2025-02-03 15:03:48.000,Firefox,124.2,fr-FR,1920x1080,laptop,0,3157abcd-6905wxyz,free,IT,landing-page,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 08:45:00.000,lmno2304mnop8572,6639abcd-6551wxyz,2025-02-03 08:45:09.000,Safari,116.9,en-US,1440x900,mobile,0,1570abcd-6165wxyz,free,ES,library,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-04 00:42:00.000,lmno2971mnop7997,7967abcd-8722wxyz,2025-02-04 00:43:55.000,Safari,110.4,fr-FR,1920x1080,desktop,1,4322abcd-3412wxyz,free,FR,library,,,
+item-finished,2025-02-02 08:38:00.000,lmno3358efgh2120,1746abcd-8849wxyz,2025-02-02 08:38:30.000,Safari,120.6,en-US,1440x900,desktop,1,4687abcd-9376wxyz,premium,DE,search,14783,book,Atomic Habits
+item-finished,2025-01-29 18:25:42.789,lmno3456pqrs7890tuvw1234,7890lmno-3456-5678-pqrs-90tuvwxyz1234,2025-01-29 18:27:10.321,Edge,120.0,de-DE,3840x2160,desktop,1,lmno3456-5678-7890-pqrs-tuvwxyz1234,free,DE,library,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-02 23:02:00.000,lmno3604qrst1078,2556abcd-4425wxyz,2025-02-02 23:03:45.000,Edge,119.6,en-US,1440x900,mobile,1,1306abcd-1011wxyz,free,GB,landing-page,,,
+login-successful,2025-02-04 10:19:00.000,lmno3797uvwx2687,8213abcd-1834wxyz,2025-02-04 10:19:50.000,Edge,119.6,de-DE,1440x900,desktop,1,2895abcd-7247wxyz,free,GB,search,,,
+item-finished,2025-02-04 19:20:00.000,lmno4217mnop9628,6507abcd-7463wxyz,2025-02-04 19:21:07.000,Chrome,105.6,en-US,1366x768,mobile,1,7431abcd-6325wxyz,free,FR,library,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-04 18:40:00.000,lmno4217mnop9628,9116abcd-4900wxyz,2025-02-04 18:40:31.000,Chrome,127.1,de-DE,1440x900,tablet,1,6278abcd-1208wxyz,free,DE,landing-page,,,
+item-finished,2025-02-03 13:29:00.000,lmno4312mnop1455,4335abcd-5094wxyz,2025-02-03 13:30:34.000,Edge,125.6,en-US,1920x1080,tablet,0,2906abcd-2911wxyz,free,DE,search,14783,book,Atomic Habits
+item-started,2025-02-03 19:45:00.000,wxyz1661qrst2086,5431abcd-4323wxyz,2025-02-03 19:46:52.000,Firefox,104.6,en-US,2560x1440,mobile,1,2988abcd-9653wxyz,premium,US,landing-page,76602,article,Paradis
+item-finished,2025-02-02 05:40:00.000,pqrs9297uvwx6226,5749abcd-3338wxyz,2025-02-02 05:41:12.000,Edge,125.9,en-US,2560x1440,desktop,1,6523abcd-3111wxyz,premium,US,library,14783,book,Atomic Habits
+item-finished,2025-02-03 21:38:00.000,lmno4783efgh1995,6573abcd-1959wxyz,2025-02-03 21:38:05.000,Chrome,129.5,en-US,1366x768,laptop,1,2903abcd-2343wxyz,premium,FR,landing-page,14783,book,Atomic Habits
+item-finished,2025-02-02 23:30:00.000,lmno5230qrst7044,8242abcd-2089wxyz,2025-02-02 23:31:09.000,Chrome,113.2,en-US,1920x1080,laptop,0,2186abcd-2245wxyz,free,US,landing-page,14783,book,Atomic Habits
+login-successful,2025-02-03 03:45:00.000,lmno7328mnop3004,3250abcd-3128wxyz,2025-02-03 03:46:49.000,Chrome,126.4,de-DE,1366x768,desktop,1,3546abcd-7290wxyz,free,DE,library,,,
+item-started,2025-02-02 05:22:00.000,lmno7978qrst9898,4668abcd-9081wxyz,2025-02-02 05:22:06.000,Safari,104.9,es-ES,2560x1440,mobile,0,2501abcd-1726wxyz,premium,GB,search,14783,book,Atomic Habits
+login-successful,2025-02-02 05:21:00.000,lmno7978qrst9898,5186abcd-6911wxyz,2025-02-02 05:22:53.000,Firefox,101.3,es-ES,1366x768,desktop,0,2165abcd-7218wxyz,free,GB,library,,,
+item-started,2025-02-02 10:36:00.000,lmno8278qrst1908,6392abcd-4007wxyz,2025-02-02 10:37:40.000,Chrome,123.7,es-ES,2560x1440,mobile,1,6240abcd-1983wxyz,free,FR,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-02 10:11:00.000,lmno8278qrst1908,4439abcd-9460wxyz,2025-02-02 10:11:04.000,Edge,130.5,de-DE,1920x1080,mobile,0,9853abcd-3407wxyz,premium,IT,library,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-02 06:44:00.000,lmno8844qrst6029,9803abcd-1951wxyz,2025-02-02 06:45:37.000,Firefox,102.0,en-US,1920x1080,tablet,1,7343abcd-5011wxyz,free,US,library,,,
+item-started,2025-02-02 15:47:00.000,lmno9201mnop3259,8104abcd-4567wxyz,2025-02-02 15:48:37.000,Safari,123.7,es-ES,1366x768,tablet,0,2223abcd-1904wxyz,free,DE,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 13:27:00.000,lmno9444mnop7411,9327abcd-1996wxyz,2025-02-03 13:28:09.000,Edge,107.9,es-ES,1920x1080,tablet,1,6523abcd-7603wxyz,free,FR,landing-page,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-03 01:03:00.000,lmno9850mnop7248,1326abcd-7996wxyz,2025-02-03 01:03:24.000,Chrome,103.5,fr-FR,1920x1080,tablet,0,5485abcd-6131wxyz,premium,GB,landing-page,14783,book,Atomic Habits
+login-successful,2025-02-03 00:52:00.000,lmno9850mnop7248,7623abcd-9961wxyz,2025-02-03 00:53:10.000,Safari,105.9,es-ES,1440x900,mobile,0,9508abcd-6244wxyz,premium,GB,search,,,
+item-finished,2025-02-01 12:29:00.000,lmno9958qrst4510,7198abcd-9161wxyz,2025-02-01 12:30:18.000,Safari,123.2,en-US,1366x768,laptop,0,1670abcd-5048wxyz,free,FR,search,14783,book,Atomic Habits
+item-finished,2025-02-01 08:58:00.000,pqrs1416efgh5707,8383abcd-1868wxyz,2025-02-01 08:59:05.000,Chrome,125.9,de-DE,1366x768,desktop,1,6344abcd-1060wxyz,free,IT,search,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-01 10:35:00.000,pqrs1938uvwx4663,7053abcd-5116wxyz,2025-02-01 10:36:09.000,Firefox,130.3,en-US,1920x1080,desktop,1,3004abcd-3999wxyz,free,FR,library,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-03 02:25:00.000,pqrs2343mnop6479,5645abcd-6611wxyz,2025-02-03 02:26:39.000,Safari,109.7,de-DE,2560x1440,tablet,1,6965abcd-6457wxyz,free,ES,search,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 02:31:00.000,pqrs2343mnop6479,1859abcd-4966wxyz,2025-02-03 02:31:02.000,Firefox,110.4,en-US,1920x1080,tablet,1,4226abcd-3990wxyz,premium,GB,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-04 02:11:00.000,pqrs5441uvwx8802,5516abcd-2530wxyz,2025-02-04 02:12:41.000,Edge,122.3,fr-FR,1920x1080,desktop,0,2332abcd-3766wxyz,premium,ES,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-02 18:46:00.000,pqrs6635efgh3620,8900abcd-4376wxyz,2025-02-02 18:47:51.000,Edge,114.3,en-US,1366x768,tablet,1,6166abcd-6282wxyz,premium,FR,landing-page,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 06:05:00.000,abcd4142mnop4938,6902abcd-3687wxyz,2025-02-03 06:05:40.000,Edge,119.8,de-DE,1366x768,tablet,0,8646abcd-2488wxyz,free,DE,search,14783,book,Atomic Habits
+item-finished,2025-02-01 13:56:00.000,tuvw9692mnop7628,2870abcd-6075wxyz,2025-02-01 13:57:50.000,Chrome,118.9,es-ES,1440x900,mobile,1,7595abcd-1737wxyz,premium,US,landing-page,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-02 23:10:00.000,tuvw1113mnop2972,2694abcd-4604wxyz,2025-02-02 23:10:45.000,Edge,100.6,es-ES,2560x1440,desktop,0,1314abcd-5658wxyz,free,ES,landing-page,,,
+item-finished,2025-02-03 00:27:00.000,tuvw1853uvwx6126,9668abcd-2729wxyz,2025-02-03 00:28:43.000,Safari,125.8,de-DE,1920x1080,laptop,1,8652abcd-3467wxyz,free,GB,library,14783,book,Atomic Habits
+login-successful,2025-02-02 23:56:00.000,tuvw1853uvwx6126,4927abcd-2267wxyz,2025-02-02 23:56:14.000,Edge,104.8,de-DE,1440x900,laptop,0,1457abcd-5407wxyz,free,GB,library,,,
+login-successful,2025-02-03 19:27:00.000,tuvw2132uvwx8174,6792abcd-3443wxyz,2025-02-03 19:28:12.000,Safari,109.6,fr-FR,2560x1440,mobile,0,8204abcd-4920wxyz,premium,DE,library,,,
+item-finished,2025-02-04 00:24:00.000,tuvw3815efgh7230,9966abcd-7003wxyz,2025-02-04 00:25:37.000,Safari,119.4,de-DE,2560x1440,desktop,0,1590abcd-2697wxyz,premium,GB,search,14783,book,Atomic Habits
+item-started,2025-02-01 18:11:00.000,tuvw4206uvwx3901,9732abcd-2565wxyz,2025-02-01 18:12:42.000,Edge,102.2,de-DE,2560x1440,desktop,1,1309abcd-3775wxyz,premium,GB,search,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-03 11:05:00.000,tuvw4827qrst1435,7195abcd-9895wxyz,2025-02-03 11:06:25.000,Chrome,111.9,fr-FR,1440x900,laptop,0,1479abcd-2575wxyz,premium,US,landing-page,,,
+login-successful,2025-02-03 11:22:00.000,tuvw4827qrst1435,9788abcd-6720wxyz,2025-02-03 11:23:22.000,Safari,125.2,fr-FR,1366x768,mobile,0,9160abcd-6708wxyz,premium,DE,landing-page,,,
+item-started,2025-02-04 11:07:00.000,tuvw5785efgh6328,2467abcd-7183wxyz,2025-02-04 11:07:12.000,Safari,108.2,de-DE,1366x768,laptop,1,4896abcd-3982wxyz,premium,US,library,683645,book,Mindset
+item-finished,2025-02-04 11:33:00.000,tuvw5785efgh6328,3122abcd-5052wxyz,2025-02-04 11:33:30.000,Edge,126.9,de-DE,1440x900,tablet,0,9846abcd-5970wxyz,premium,DE,search,683645,book,Mindset
+login-successful,2025-02-02 10:44:00.000,tuvw6104efgh7959,5901abcd-2860wxyz,2025-02-02 10:44:50.000,Chrome,104.5,en-US,1920x1080,mobile,1,8015abcd-5182wxyz,free,ES,landing-page,,,
+item-finished,2025-02-04 09:02:00.000,tuvw6742qrst5386,3551abcd-4471wxyz,2025-02-04 09:02:51.000,Edge,116.8,fr-FR,1440x900,laptop,0,7788abcd-6989wxyz,premium,ES,library,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-04 09:51:00.000,tuvw6742qrst5386,1948abcd-3688wxyz,2025-02-04 09:52:55.000,Edge,120.6,de-DE,1920x1080,mobile,1,5563abcd-2793wxyz,premium,IT,landing-page,1006,book,"Thinking, Fast and Slow"
+login-successful,2025-02-04 08:31:00.000,tuvw6742qrst5386,1395abcd-3455wxyz,2025-02-04 08:32:39.000,Safari,113.5,fr-FR,2560x1440,laptop,1,5658abcd-9763wxyz,free,IT,search,,,
+login-successful,2025-02-04 08:44:00.000,tuvw6742qrst5386,7577abcd-2571wxyz,2025-02-04 08:45:19.000,Safari,114.1,en-US,1440x900,desktop,1,7615abcd-6324wxyz,free,IT,landing-page,,,
+item-finished,2025-02-03 21:56:00.000,tuvw6986mnop3956,8008abcd-1318wxyz,2025-02-03 21:57:01.000,Firefox,121.6,es-ES,1366x768,tablet,1,7889abcd-6827wxyz,premium,DE,search,14783,book,Atomic Habits
+item-finished,2025-02-04 05:21:00.000,tuvw9506qrst7989,3635abcd-7640wxyz,2025-02-04 05:21:38.000,Edge,108.6,fr-FR,1920x1080,laptop,1,5559abcd-3182wxyz,premium,ES,search,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-01 13:56:00.000,tuvw9692mnop7628,2870abcd-6075wxyz,2025-02-01 13:57:50.000,Chrome,118.9,es-ES,1440x900,mobile,1,7595abcd-1737wxyz,premium,US,landing-page,1006,book,"Thinking, Fast and Slow"
+item-finished,2025-02-03 04:45:00.000,wxyz1513uvwx4460,4819abcd-2179wxyz,2025-02-03 04:46:33.000,Firefox,101.2,es-ES,1366x768,laptop,1,6554abcd-5578wxyz,free,FR,library,14783,book,Atomic Habits
+item-started,2025-02-03 19:45:00.000,wxyz1661qrst2086,5431abcd-4323wxyz,2025-02-03 19:46:52.000,Firefox,104.6,en-US,2560x1440,mobile,1,2988abcd-9653wxyz,premium,US,landing-page,14783,book,Atomic Habits
+item-started,2025-02-01 14:43:00.000,wxyz2536uvwx4192,3980abcd-8706wxyz,2025-02-01 14:43:27.000,Safari,129.1,de-DE,1366x768,tablet,1,6971abcd-9456wxyz,free,FR,library,14783,book,Atomic Habits
+login-successful,2025-02-03 21:30:00.000,wxyz3382uvwx3523,2164abcd-2247wxyz,2025-02-03 21:31:00.000,Firefox,116.7,es-ES,1920x1080,mobile,0,5355abcd-5556wxyz,premium,FR,library,,,
+login-successful,2025-02-03 02:45:00.000,wxyz3864mnop7798,2988abcd-7662wxyz,2025-02-03 02:45:43.000,Chrome,111.3,fr-FR,2560x1440,mobile,0,1849abcd-6264wxyz,premium,US,landing-page,,,
+item-finished,2025-02-03 12:25:00.000,wxyz4874qrst5013,5731abcd-8428wxyz,2025-02-03 12:25:35.000,Safari,119.6,en-US,2560x1440,tablet,0,9137abcd-3838wxyz,free,US,landing-page,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-04 04:48:00.000,wxyz4943efgh8680,8231abcd-5003wxyz,2025-02-04 04:48:31.000,Safari,114.1,fr-FR,2560x1440,mobile,0,4784abcd-6012wxyz,free,IT,search,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-02 06:38:00.000,wxyz5875uvwx6889,7905abcd-1798wxyz,2025-02-02 06:39:29.000,Edge,111.1,es-ES,2560x1440,mobile,0,4630abcd-1973wxyz,free,DE,landing-page,1006,book,"Thinking, Fast and Slow"
+item-started,2025-02-02 17:18:00.000,wxyz6178mnop9799,2252abcd-7791wxyz,2025-02-02 17:18:59.000,Chrome,112.4,de-DE,1920x1080,desktop,0,3277abcd-3946wxyz,free,GB,library,14783,book,Atomic Habits
+item-started,2025-02-03 01:18:00.000,wxyz6402efgh3890,2049abcd-7341wxyz,2025-02-03 01:18:14.000,Edge,129.4,fr-FR,2560x1440,tablet,1,5864abcd-6355wxyz,premium,DE,library,1006,book,"Thinking, Fast and Slow"
+item-started,2025-01-29 14:05:12.456,wxyz6789mnop1234qrst5678,5678wxyz-1234-90op-qrs5-678tuvwxyz12,2025-01-29 14:06:30.789,Safari,16.4,es-ES,1440x900,laptop,0,wxyz6789-1234-5678-opqr-stuvabcdef90,premium,ES,library,14783,book,Atomic Habits
+item-finished,2025-02-04 10:14:00.000,wxyz7369uvwx1746,1602abcd-4903wxyz,2025-02-04 10:15:18.000,Firefox,101.4,fr-FR,2560x1440,laptop,1,6339abcd-3878wxyz,premium,US,search,14783,book,Atomic Habits
+item-started,2025-02-01 15:46:00.000,wxyz9249mnop2521,3218abcd-3364wxyz,2025-02-01 15:47:29.000,Chrome,108.1,fr-FR,1920x1080,desktop,0,7336abcd-9833wxyz,premium,IT,search,1006,book,"Thinking, Fast and Slow"
