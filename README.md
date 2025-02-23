@@ -40,7 +40,19 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
 
     <b>Mac/Linux</b>
 
-    Store the `profiles.yml` file in `~/.dbt/`.
+    To set up dbt, follow these steps:
+    1. Create the `.dbt` directory (if it doesn’t already exist):
+    
+    ```bash
+    mkdir -p ~/.dbt
+    ```
+
+    2. Copy the required configuration files into `.dbt/`:
+    
+    ```bash
+    cp profiles/profiles.yml ~/.dbt/profiles.yml
+    cp profiles/.user.yml ~/.dbt/.user.yml
+    ```
 
 4. **Verify Installation:** 
     To ensure everything is set up correctly, run:
