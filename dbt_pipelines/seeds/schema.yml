@@ -1,0 +1,37 @@
+version: 2
+
+"""
+  We converted all column types in VARCHAR just so we can have NUll values in database. Because 
+  this is anyways raw data so can be and we can convert them later on
+"""
+
+seeds:
+  - name: customers
+    config:
+      column_types:
+        id: varchar #integer
+        Kdnr: varchar #integer
+        Verlagsname: varchar  #string 
+        Region: varchar #string
+
+  - name: invoices
+    config:
+      column_types:
+        ReNummer: varchar #integer
+        SummeNetto: varchar #float
+        MwStSatz: varchar #integer
+        ZahlungsbetragBrutto: varchar #float
+        KdNr: varchar #integer
+        Summenebenkosten: varchar   #float
+        ReDatum: varchar #Date
+        Zahlungsdatum: varchar  # Using varchar to handle NULL strings
+
+  - name: positions
+    config:
+      column_types:
+        id: varchar #integer
+        ReId: varchar #integer
+        KdNr: varchar 
+        Nettobetrag: varchar #float
+        Bildnummer: varchar #integer
+        VerDatum: varchar #Date

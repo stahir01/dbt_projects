@@ -1,54 +1,139 @@
-
-version: 2
+version : 2 
 
 models:
-  - name: stg_mobile_events
-    description: "Cleaned mobile events data from the raw seeds"
+  - name: stg_customers
+    description: "Customer Information"
     columns:
-      - name: event_name
-        description: "The name of the event"
+      - name: id
+        description: "Event id"
         tests:
+          - unique
           - not_null
-      - name: application_version_code
-        description: "The version code of the application"
-        tests:
-          - not_null
-      - name: arrival_timestamp
-        description: "The timestamp when the event arrived in the backend"
-        tests:
-          - not_null
-      - name: client_id
-        description: "The client id of the event"
-        tests:
-          - not_null
-      - name: event_timestamp
-        description: "The client timestamp of the event"
-        tests:
-          - not_null
+          - is_integer
 
-        
-  - name: stg_web_events
-    description: "Cleaned web events data from the raw seeds"
+      - name: Kdnr
+        description: "Customer number"
+        tests: 
+          - not_null
+          - is_integer
+          - accepted_values:
+              values: ['>= 10000', '<= 99999']
+              config:
+                severity: warn
+
+      - name: Verlagsname
+        description: "Published name"
+        tests:
+          - not_null:
+              config:
+                severity: warn
+
+      - name: Region
+        description: "Region"
+
+
+
+
+  - name: stg_invoices
+    description: "Invoice Information"
     columns:
-      - name: event_name
-        description: "The name of the event"
+      - name: ReNummer
+        description: "Invoice number"
+        tests: 
+          - unique
+          - not_null 
+          - is_integer
+      
+      - name: SummeNetto
+        description: "Net Total"
+    
+      - name: MwStSatz
+        description: "VAT rate"
         tests:
           - not_null
-      - name: event_timestamp
-        description: "The client timestamp of the event"
-        tests:
+          - is_integer
+      
+      - name: ZahlungsbetragBrutto
+        description: "Gross payment amount"
+        tests: 
           - not_null
-      - name: user_id
-        description: "The user id of the event"
-        tests:
+          - is_float:
+              config:
+                severity: warn
+      
+      - name: Kdnr
+        description: "Customer number"
+        tests: 
+          - not_null:
+            config:
+                severity: warn
+          - is_integer
+          - accepted_values:
+              values: ['>= 10000', '<= 99999']
+      
+      - name: Summenebenkosten
+        description: "Total additional costs"
+        tests: 
+          - is_float
+      
+      - name: ReDatum
+        description: "Invoice date"
+        tests: 
+          - not_null:
+              config:
+                severity: warn
+          - is_date
+      
+      - name: Zahlungsdatum
+        description: "Payment date"
+        tests: 
+          - is_date:
+              config:
+                severity: warn
+          - dbt_utils.expression_is_true:
+              expression: "Zahlungsdatum >= ReDatum OR Zahlungsdatum IS NULL"
+              config:
+                severity: warn
+
+  
+
+  
+  - name: stg_positions
+    description: "Customer positions"
+    columns:
+      - name: id
+        description: "Position id"
+        tests: 
           - unique
           - not_null
-      - name: arrival_timestamp
-        description: "The timestamp when the event arrived in the backend"
-        tests:
-          - not_null
-      - name: session_id
-        description: "The session id of the event"
-        tests:
-          - unique
-          - not_null
+          - is_integer
+      
+      - name: ReId
+        description: "Invoice id"
+        tests: 
+          - not_null:
+              config:
+                severity: warn
+          - is_integer
+      
+      - name: KdNr
+        description: "Customer number"
+        tests: 
+          - not_null:
+              config:
+                severity: warn
+      
+      - name: Nettobetrag
+        description: "Net amount"
+      
+      - name: Bildnummer
+        description: "Image number"
+        tests: 
+          - is_integer
+
+      - name: VerDatum
+        description: "Image date"
+        tests: 
+          - is_date:
+              config:
+                severity: warn
