@@ -113,7 +113,15 @@ models:
       
       - name: Bildnummer
         description: "Image number"
-
+        tests:
+          - dbt_expectations.expect_column_values_to_not_be_in_set:
+              value_set: [100000000]
+              config:
+                severity: warn
+                
+      - name: is_placeholder
+        description: "Is placeholder"
+           
       - name: VerDatum
         description: "Image date"
         tests:

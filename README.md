@@ -1,6 +1,5 @@
-# Blinkist Engagement Metrics dbt Project
-
-This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as the underlying database. The goal is to ingest, transform, and produce a final table that captures core engagement metrics from Blinkist mobile and web events.
+# dbt Project
+This project is a dbt (data build tool) project designed to transform and analyze data. It includes various models, seeds, and tests to ensure data quality and integrity. The project is structured to follow best practices in dbt development, including a layered architecture for data transformation.
 
 ---
 
@@ -8,8 +7,6 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
 
 - [Setup and Running the Project](#setup-and-running-the-project)
 - [Project Structure and Decisions](#project-structure-and-decisions)
-- [Challenges and Assumptions](#challenges-and-assumptions)
-- [Additional Analyses and Metrics](#additional-analyses-and-metrics)
 
 ---
 
@@ -28,10 +25,19 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
     Install the required dbt packages using pip:
 
    ```bash
-   python -m pip install dbt-core dbt-duckdb
+   pip install dbt-core dbt-duckdb
     ```
 
-3. **Configure  `profiles.yml`:**  
+3. **Instal requirements.txt:**  
+    Install the required packages using pip:
+
+   ```bash
+   pip install -r requirements.txt
+    ```
+
+    This will install all the necessary dependencies for the project.
+
+4. **Configure  `profiles.yml`:**  
     To use dbt, you need to configure the `profiles.yml` file. Follow the steps based on your operating system:
     
     <b>Windows</b>
@@ -54,7 +60,14 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
     cp profiles/.user.yml ~/.dbt/.user.yml
     ```
 
-4. **Verify Installation:** 
+5. **Install Dependencies:**:*
+    Before running the project, install all required packages:
+
+    ```bash
+   dbt deps
+    ```
+
+6. **Verify Installation:** 
     To ensure everything is set up correctly, run:
 
     ```bash
@@ -62,14 +75,26 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
     ```
     If everything is correctly configured, you should see a success message confirming that your profiles are set up properly.
 
-5. **Load Sample Data:**  
+7. **Load Sample Data:**  
 
    ```bash
    dbt seed
     ```
 
-6. **Run the Models:**  
-    To build your models and materialize the engagement metrics table, run:
+8. **Run the Test:**  
+    Validate data quality with:
+
+   ```bash
+   dbt test
+    ```
+
+    Alternatively, you can run a specific model:
+
+    ```bash
+    dbt test --select model_name
+    ```
+9. **Run the Models:**  
+    To run your models and materialize the engagement metrics table, run:
 
    ```bash
    dbt run
@@ -78,8 +103,19 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
     Alternatively, you can run a specific model:
 
     ```bash
-    dbt run -m mart_engagement
+    dbt run -m model_name
     ```
+
+10. **Build the Models:**  
+    To build your models and materialize the engagement metrics table, run:
+
+  ```bash
+   dbt run
+  ```
+
+  ```bash
+    dbt build -m model_name
+  ```
 
 ---
 
@@ -88,20 +124,27 @@ This project builds a data pipeline using dbt (Data Build Tool) with DuckDB as t
 ## Layered Architecture
 
 ### Seeds
-The CSV files act as the raw ingestion layer.
+Used as the base layer where raw data is initially stored. In production, this would include data from various sources like Excel files, Google Sheets, and external databases. All are stored in their original, unprocessed form.
 
 ### Staging Models (models/staging/)
-These models clean and standardize the raw data from the seeds. We created `stg_mobile_events.sql` and `stg_web_events.sql` for this purpose.
+Materialized as views, this layer focuses on:
+
+- **Data Quality:** Ensuring the data is clean and adheres to the expected schema.
+- **Data Transformation:** Applying necessary transformations to prepare the data for analysis.
+- **Data Enrichment:** Adding additional context or derived fields to the data.
+- **Data Validation:** Ensuring the data meets certain quality standards.
 
 ### Data Marts (models/marts/)
-The final engagement metrics are built in `mart_engagement.sql`. This model aggregates key metrics such as:
-- **Daily Active Users (DAU):** Unique users per day from both mobile and web interactions.
-- **Daily Active Learners (DAL):** Unique users per day who interacted with Blinkist content.
-- **Content Completions (Web):** Count of web events with the event name `'item-finished'`.
-- **Regional Activity (DACH):** Unique mobile users from the DACH region in the last 30 days.
+Materialized as tables, this layer contains:
+
+- Dimension tables (descriptive attributes)
+- Fact tables (quantitative data)
+- Business-ready aggregated metrics
+- Domain-specific datasets for BI tools and analytics
+
 
 ### Materialization Choices
-Each model is materialized as a table rather than a view. This decision supports a Lakehouse-like architecture where data is stored persistently for further querying and analysis. Although larger projects may include a base layer, this task was kept simple by using only staging and marts.
+The project follows a layered materialization approach where staging models are implemented as views while marts are materialized as tables. This structure aligns with dbt's recommended best practices and closely resembles the Medallion architecture pattern. The staging views handle initial data cleaning and standardization, serving as a lightweight transformation layer. Meanwhile, the marts tables persist optimized datasets for analytical consumption, ensuring performant queries for end users. This separation of concerns between transformation
 
 ### Schema Configuration
 The `dbt_project.yml` file includes schema configuration to separate staging and analytics:
@@ -110,7 +153,6 @@ The `dbt_project.yml` file includes schema configuration to separate staging and
 models:
   dbt_pipelines:
     staging:
-      +materialized: table
       +schema: staging
     marts:
       +materialized: table
