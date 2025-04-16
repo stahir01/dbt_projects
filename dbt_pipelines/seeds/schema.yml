@@ -1,10 +1,5 @@
 version: 2
 
-"""
-  We converted all column types in VARCHAR just so we can have NUll values in database. Because 
-  this is anyways raw data so can be and we can convert them later on
-"""
-
 seeds:
   - name: customers
     config:

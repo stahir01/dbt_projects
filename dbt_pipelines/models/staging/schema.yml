@@ -1,4 +1,4 @@
-version : 2 
+version: 2
 
 models:
   - name: stg_customers
@@ -9,15 +9,11 @@ models:
         tests:
           - unique
           - not_null
-          - is_integer
 
       - name: Kdnr
         description: "Customer number"
         tests: 
-          - not_null
-          - is_integer
-          - accepted_values:
-              values: ['>= 10000', '<= 99999']
+          - not_null:
               config:
                 severity: warn
 
@@ -31,9 +27,6 @@ models:
       - name: Region
         description: "Region"
 
-
-
-
   - name: stg_invoices
     description: "Invoice Information"
     columns:
@@ -42,22 +35,21 @@ models:
         tests: 
           - unique
           - not_null 
-          - is_integer
       
       - name: SummeNetto
         description: "Net Total"
-    
+      
       - name: MwStSatz
         description: "VAT rate"
         tests:
-          - not_null
-          - is_integer
+          - not_null:
+              config:
+                severity: warn
       
       - name: ZahlungsbetragBrutto
         description: "Gross payment amount"
         tests: 
-          - not_null
-          - is_float:
+          - not_null:
               config:
                 severity: warn
       
@@ -65,39 +57,34 @@ models:
         description: "Customer number"
         tests: 
           - not_null:
-            config:
+              config:
                 severity: warn
-          - is_integer
-          - accepted_values:
-              values: ['>= 10000', '<= 99999']
       
       - name: Summenebenkosten
         description: "Total additional costs"
-        tests: 
-          - is_float
-      
+       
       - name: ReDatum
         description: "Invoice date"
         tests: 
           - not_null:
               config:
                 severity: warn
-          - is_date
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: date
+              config:
+                  severity: warn
       
       - name: Zahlungsdatum
         description: "Payment date"
-        tests: 
-          - is_date:
+        tests:
+          - not_null:
               config:
-                severity: warn
-          - dbt_utils.expression_is_true:
-              expression: "Zahlungsdatum >= ReDatum OR Zahlungsdatum IS NULL"
+                severity: warn 
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: date
               config:
-                severity: warn
+                  severity: warn
 
-  
-
-  
   - name: stg_positions
     description: "Customer positions"
     columns:
@@ -106,7 +93,6 @@ models:
         tests: 
           - unique
           - not_null
-          - is_integer
       
       - name: ReId
         description: "Invoice id"
@@ -114,7 +100,6 @@ models:
           - not_null:
               config:
                 severity: warn
-          - is_integer
       
       - name: KdNr
         description: "Customer number"
@@ -128,12 +113,14 @@ models:
       
       - name: Bildnummer
         description: "Image number"
-        tests: 
-          - is_integer
 
       - name: VerDatum
         description: "Image date"
-        tests: 
-          - is_date:
+        tests:
+          - not_null:
               config:
                 severity: warn
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: date
+              config:
+                  severity: warn

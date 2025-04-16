@@ -10,13 +10,10 @@ data_cleaning AS (
             WHEN TRY_CAST(Kdnr AS DECIMAL(5,0)) IS NOT NULL 
             THEN CAST(Kdnr AS DECIMAL(5,0))
             ELSE NULL
-        END AS customer_id,
+        END AS Kdnr,
         CAST(Verlagsname AS STRING) AS Verlagsname,
-        CASE 
-            WHEN CAST(Region AS STRING) IN ('North', 'South', 'East', 'West') THEN Region
-            ELSE 'Unknown'
-        END AS region,
-    FROM raw_values
+        COALESCE(NULLIF(NULLIF(UPPER(TRIM(Region)), 'NULL'), ''), 'Unknown') AS Region   
+     FROM raw_values
     )
 
 SELECT * FROM data_cleaning
