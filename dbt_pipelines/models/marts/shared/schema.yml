@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dim_dates
+    description: "It ontains a record for each date in the range of 2021-2030."

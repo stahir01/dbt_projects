@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_invoices
+    description: "It contains information about invoices."
